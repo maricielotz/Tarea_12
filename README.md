@@ -1,5 +1,5 @@
 # Tarea_12
-### Ejercicios Propuestos
+## Ejercicios Propuestos
 #### 1. ¿Cuál es el total de ventas realizadas en el año 2009?
 DECLARE @fecha_inicio datetime = '2005-01-01';
 DECLARE @fecha_fin datetime = '2005-12-31';
