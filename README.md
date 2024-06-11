@@ -33,7 +33,9 @@ INNER JOIN pa.pago p ON dp.pago = p.pago
 WHERE p.formaPago = 10; -- 1 es pago al Contado
 
 SELECT * FROM pa.pago
+
 SELECT * FROM ve.documento
+
 SELECT * FROM ve.documentoPago
 
 #### 6. ¿Cuál es la consulta que devuelve los detalles de los documentos de ventas que han sido canjeados, considerando que un documento puede ser canjeado por uno o más documentos, y estos detalles deben incluir información de los documentos originales y los documentos canjeados?
@@ -154,6 +156,7 @@ LEFT JOIN ma.personaDestino pd ON p.persona = pd.persona
 WHERE pd.persona IS NULL
 
 SELECT * FROM ma.persona
+
 SELECT * FROM ma.personaDestino
 
 #### 18. ¿Cuál es el promedio del monto total de todas las transacciones de ventas registradas en la base de datos en el año 2009, expresado en moneda local (soles peruanos)?
