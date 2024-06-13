@@ -8,7 +8,7 @@ SELECT SUM(total) AS Total_Ventas
 FROM ve.documento
 WHERE fechaMovimiento BETWEEN @fecha_inicio AND @fecha_fin;
 
-#####Ejemplo
+##### Ejemplo
 DECLARE @fecha_inicio_2005 datetime = '2005-01-01';
 DECLARE @fecha_fin_2005 datetime = '2005-12-31';
 
