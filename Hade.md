@@ -1,12 +1,20 @@
 # Tarea_12
 ## Ejercicios Propuestos
 #### 1. ¿Cuál es el total de ventas realizadas en el año 2009?
-DECLARE @fecha_inicio datetime = '2005-01-01';
-DECLARE @fecha_fin datetime = '2005-12-31';
+DECLARE @fecha_inicio datetime = '2009-01-01';
+DECLARE @fecha_fin datetime = '2009-12-31';
 
 SELECT SUM(total) AS Total_Ventas
 FROM ve.documento
 WHERE fechaMovimiento BETWEEN @fecha_inicio AND @fecha_fin;
+
+#####
+DECLARE @fecha_inicio_2005 datetime = '2005-01-01';
+DECLARE @fecha_fin_2005 datetime = '2005-12-31';
+
+SELECT SUM(total) AS Total_Ventas
+FROM ve.documento
+WHERE fechaMovimiento BETWEEN @fecha_inicio_2005 AND @fecha_fin_2005;
 
 #### 2. ¿Cuáles son las personas que no tienen una entrada registrada en la tabla personaDestino?
 SELECT p.*
